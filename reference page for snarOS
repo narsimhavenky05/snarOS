@@ -1,0 +1,15 @@
+✅ Summary Table of Folder structure
+Layer	            Folder	                    Notes
+Bootloader	      bootloader/	                Real-mode boot
+Kernel	          kernel/	                    Panic, startup
+Drivers	          drivers/	                  Keyboard, screen, mouse
+Process Mgmt	    proc/	                      Tasking, scheduler
+Filesystem	      fs/	                        snarFS, VFS
+Memory Mgmt	      arch/x86_64/memory/	        Paging, heap
+User Apps	        user/	                      Calculator, editor
+Build Tools	      scripts/, build/	          Compile/run helpers
+GitHub Essentials	.gitignore, README.md	      Must for sharing
+Docs	            docs/                       Design files
+Shell	            shell/	                    snarOS terminal
+Backups	          backups/	                  Daily snapshots
+
