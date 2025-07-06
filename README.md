@@ -93,15 +93,15 @@ snarOS/
 │   └── boot.log
 │
 └── docs/                  ← Design docs, architecture plans,  Architecture, design decisions
-|   ├── snarOS_Design.md
-|   └── snarFS_Spec.pdf
-|
+│    ├── snarOS_Design.md
+│    └── snarFS_Spec.pdf
+│ 
 ├── build/              # Output build artifacts (.bin, .img)
 ├── scripts/            # Shell scripts like build.sh
 ├── README.md
 ├── .gitignore
 ├── backups/
-|     ├── snarOS_day1
-|     ├── snarOS_day2
-|     |......   
+│      ├── snarOS_day1
+│      ├── snarOS_day2
+│      │ .....   
 └── build.sh
