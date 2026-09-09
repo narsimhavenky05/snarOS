@@ -1,77 +1,1783 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>snarOS</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="snarOS — an independent operating system being built from the ground up."
+  >
+
+  <meta
+    name="theme-color"
+    content="#06070b"
+  >
+
+  <title>snarOS — Built From the Ground Up</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- NAVBAR -->
+
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================== -->
+
   <header class="navbar">
+
     <div class="nav-container">
-      <div class="logo">snar<span>OS</span></div>
+
+      <a href="#top" class="logo">
+        snar<span>OS</span>
+      </a>
 
       <nav class="nav-links">
-        <a href="#">Features</a>
-        <a href="#">Docs</a>
-        <a href="#">Download</a>
-        <a href="#">Community</a>
+
+        <a href="#v1">1.0</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#devlog">Devlog</a>
+
       </nav>
 
       <div class="nav-actions">
-        <a class="login" href="#">Login</a>
-        <a class="btn" href="#">Get Started</a>
+
+        <span class="nav-status">
+          <span class="status-dot"></span>
+          In Development
+        </span>
+
+        <a
+          class="github-btn"
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub ↗
+        </a>
+
       </div>
+
     </div>
+
   </header>
 
-  <!-- PAGE CONTENT -->
-  <main style="min-height:70vh;"></main>
 
-  <!-- FOOTER -->
+  <main id="top">
+
+
+    <!-- =======================================================
+         HERO
+    ======================================================== -->
+
+    <section class="hero">
+
+      <div class="hero-grid"></div>
+
+      <div class="hero-content">
+
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          Independent operating system project
+        </div>
+
+        <h1>
+          <span class="gradient-text">snarOS</span>
+        </h1>
+
+        <h2>
+          An operating system<br>
+          built from the ground up.
+        </h2>
+
+        <p class="hero-description">
+          A long-term systems engineering project focused on
+          security, isolation, reliability, performance and
+          a foundation designed to evolve.
+        </p>
+
+        <div class="hero-actions">
+
+          <a href="#v1" class="primary-btn">
+            Explore snarOS 1.0
+            <span>↓</span>
+          </a>
+
+          <a href="#roadmap" class="secondary-btn">
+            View roadmap
+          </a>
+
+        </div>
+
+        <div class="hero-meta">
+
+          <div>
+            <span>Current version</span>
+            <strong>0.0.1</strong>
+          </div>
+
+          <div>
+            <span>Target</span>
+            <strong>1.0.0</strong>
+          </div>
+
+          <div>
+            <span>Progress</span>
+            <strong>0%</strong>
+          </div>
+
+          <div>
+            <span>Status</span>
+            <strong>Planning</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         PROJECT STATUS
+    ======================================================== -->
+
+    <section class="section status-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">CURRENT STATE</span>
+
+          <h2>
+            The project starts here.
+          </h2>
+
+          <p>
+            snarOS is currently at the foundation stage. This website
+            will evolve together with the operating system and will
+            reflect actual implementation progress.
+          </p>
+
+        </div>
+
+
+        <div class="status-layout">
+
+          <div class="status-main card">
+
+            <div class="status-header">
+
+              <div>
+                <span class="small-label">
+                  RELEASE TARGET
+                </span>
+
+                <h3>snarOS 1.0.0</h3>
+              </div>
+
+              <span class="state-badge">
+                NOT STARTED
+              </span>
+
+            </div>
+
+
+            <div class="progress-area">
+
+              <div class="progress-labels">
+
+                <span>
+                  Overall development
+                </span>
+
+                <strong>
+                  0%
+                </strong>
+
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-value"></div>
+              </div>
+
+              <div class="progress-foot">
+
+                <span>
+                  0 milestones completed
+                </span>
+
+                <span>
+                  Release gate pending
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="status-side card">
+
+            <span class="small-label">
+              CURRENT MILESTONE
+            </span>
+
+            <h3>
+              Project Foundation
+            </h3>
+
+            <p>
+              Define the architecture, development environment,
+              system boundaries and Version 1.0 requirements.
+            </p>
+
+            <span class="mini-state">
+              Planning
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         VERSION 1.0
+    ======================================================== -->
+
+    <section id="v1" class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            VERSION 01
+          </span>
+
+          <h2>
+            What must exist<br>
+            before 1.0.
+          </h2>
+
+          <p>
+            Version 1.0 is not a visual milestone. It is a technical
+            release gate. Every major subsystem must be implemented,
+            tested and documented before the release is considered complete.
+          </p>
+
+        </div>
+
+
+        <div class="system-grid">
+
+          <!-- BOOT -->
+
+          <article class="system-card">
+
+            <div class="system-number">01</div>
+
+            <h3>Boot & Kernel</h3>
+
+            <p>
+              Establish the boot path and the fundamental privileged
+              execution environment of snarOS.
+            </p>
+
+            <div class="system-tags">
+              <span>Boot</span>
+              <span>Kernel</span>
+              <span>CPU</span>
+            </div>
+
+          </article>
+
+
+          <!-- MEMORY -->
+
+          <article class="system-card">
+
+            <div class="system-number">02</div>
+
+            <h3>Memory</h3>
+
+            <p>
+              Physical memory, virtual memory, address spaces,
+              allocation and memory protection.
+            </p>
+
+            <div class="system-tags">
+              <span>MMU</span>
+              <span>Paging</span>
+              <span>Isolation</span>
+            </div>
+
+          </article>
+
+
+          <!-- PROCESS -->
+
+          <article class="system-card">
+
+            <div class="system-number">03</div>
+
+            <h3>Processes</h3>
+
+            <p>
+              Processes, threads, scheduling, context switching,
+              synchronization and inter-process communication.
+            </p>
+
+            <div class="system-tags">
+              <span>Scheduler</span>
+              <span>Threads</span>
+              <span>IPC</span>
+            </div>
+
+          </article>
+
+
+          <!-- SECURITY -->
+
+          <article class="system-card featured">
+
+            <div class="system-number">04</div>
+
+            <h3>Security</h3>
+
+            <p>
+              Strong boundaries between components with least privilege,
+              isolation and explicit authorization mechanisms.
+            </p>
+
+            <div class="system-tags">
+              <span>Isolation</span>
+              <span>Capabilities</span>
+              <span>Trust</span>
+            </div>
+
+          </article>
+
+
+          <!-- STORAGE -->
+
+          <article class="system-card">
+
+            <div class="system-number">05</div>
+
+            <h3>Storage</h3>
+
+            <p>
+              Device abstraction, filesystem interfaces, persistent
+              storage and recovery mechanisms.
+            </p>
+
+            <div class="system-tags">
+              <span>VFS</span>
+              <span>Filesystem</span>
+              <span>Storage</span>
+            </div>
+
+          </article>
+
+
+          <!-- NETWORK -->
+
+          <article class="system-card">
+
+            <div class="system-number">06</div>
+
+            <h3>Networking</h3>
+
+            <p>
+              Network devices, protocol stack, sockets and
+              controlled communication between systems.
+            </p>
+
+            <div class="system-tags">
+              <span>IPv4/IPv6</span>
+              <span>TCP/UDP</span>
+              <span>Sockets</span>
+            </div>
+
+          </article>
+
+
+          <!-- USERSPACE -->
+
+          <article class="system-card">
+
+            <div class="system-number">07</div>
+
+            <h3>Userspace</h3>
+
+            <p>
+              System services, shell, utilities, runtime interfaces
+              and the initial application environment.
+            </p>
+
+            <div class="system-tags">
+              <span>Shell</span>
+              <span>Services</span>
+              <span>Runtime</span>
+            </div>
+
+          </article>
+
+
+          <!-- GRAPHICS -->
+
+          <article class="system-card">
+
+            <div class="system-number">08</div>
+
+            <h3>Graphics</h3>
+
+            <p>
+              Display, input, rendering and the foundation for
+              the graphical user environment.
+            </p>
+
+            <div class="system-tags">
+              <span>Display</span>
+              <span>Input</span>
+              <span>Rendering</span>
+            </div>
+
+          </article>
+
+
+          <!-- VERIFICATION -->
+
+          <article class="system-card">
+
+            <div class="system-number">09</div>
+
+            <h3>Verification</h3>
+
+            <p>
+              Automated testing, fuzzing, fault testing, benchmarks
+              and release validation.
+            </p>
+
+            <div class="system-tags">
+              <span>Testing</span>
+              <span>Fuzzing</span>
+              <span>Benchmarks</span>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         DEVELOPMENT TREE
+    ======================================================== -->
+
+    <section class="section tree-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            DEVELOPMENT TREE
+          </span>
+
+          <h2>
+            One system.<br>
+            Many engineering domains.
+          </h2>
+
+          <p>
+            The project is divided into technical domains so progress
+            can be understood at a glance without hiding the complexity
+            underneath.
+          </p>
+
+        </div>
+
+
+        <div class="tree">
+
+          <div class="tree-root">
+
+            <div class="tree-root-icon">
+              s
+            </div>
+
+            <div>
+              <strong>snarOS 1.0</strong>
+              <span>Complete system</span>
+            </div>
+
+          </div>
+
+
+          <div class="tree-line"></div>
+
+
+          <div class="tree-grid">
+
+            <div class="tree-node">
+              <span class="node-index">01</span>
+              <strong>Boot</strong>
+              <small>Firmware → Kernel</small>
+            </div>
+
+            <div class="tree-node">
+              <span class="node-index">02</span>
+              <strong>Kernel</strong>
+              <small>Core execution</small>
+            </div>
+
+            <div class="tree-node">
+              <span class="node-index">03</span>
+              <strong>Memory</strong>
+              <small>Address spaces</small>
+            </div>
+
+            <div class="tree-node">
+              <span class="node-index">04</span>
+              <strong>Processes</strong>
+              <small>Execution model</small>
+            </div>
+
+            <div class="tree-node">
+              <span class="node-index">05</span>
+              <strong>Security</strong>
+              <small>Trust boundaries</small>
+            </div>
+
+            <div class="tree-node">
+              <span class="node-index">06</span>
+              <strong>Storage</strong>
+              <small>Persistent data</small>
+            </div>
+
+            <div class="tree-node">
+              <span class="node-index">07</span>
+              <strong>Networking</strong>
+              <small>Communication</small>
+            </div>
+
+            <div class="tree-node">
+              <span class="node-index">08</span>
+              <strong>Userspace</strong>
+              <small>System environment</small>
+            </div>
+
+            <div class="tree-node">
+              <span class="node-index">09</span>
+              <strong>Graphics</strong>
+              <small>Visual environment</small>
+            </div>
+
+            <div class="tree-node">
+              <span class="node-index">10</span>
+              <strong>Verification</strong>
+              <small>Evidence & testing</small>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         ARCHITECTURE
+    ======================================================== -->
+
+    <section id="architecture" class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            ARCHITECTURE
+          </span>
+
+          <h2>
+            Boundaries are<br>
+            part of the design.
+          </h2>
+
+          <p>
+            snarOS will be developed around explicit boundaries between
+            hardware, privileged system code, system services and applications.
+          </p>
+
+        </div>
+
+
+        <div class="architecture">
+
+          <div class="architecture-layer applications">
+
+            <span class="layer-number">04</span>
+
+            <div>
+              <strong>Applications</strong>
+              <p>
+                User applications · tools · ecosystem
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="architecture-connector">
+            ↓
+          </div>
+
+
+          <div class="architecture-layer">
+
+            <span class="layer-number">03</span>
+
+            <div>
+              <strong>Userspace</strong>
+              <p>
+                Services · shell · runtime · system utilities
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="architecture-connector">
+            ↓
+          </div>
+
+
+          <div class="architecture-layer">
+
+            <span class="layer-number">02</span>
+
+            <div>
+              <strong>System Interface</strong>
+              <p>
+                System calls · IPC · resource interfaces
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="architecture-connector">
+            ↓
+          </div>
+
+
+          <div class="architecture-layer core-layer">
+
+            <span class="layer-number">01</span>
+
+            <div>
+              <strong>snarOS Core</strong>
+              <p>
+                Kernel · scheduling · memory · isolation · synchronization
+              </p>
+            </div>
+
+          </div>
+
+
+          <div class="architecture-connector">
+            ↓
+          </div>
+
+
+          <div class="architecture-layer hardware">
+
+            <span class="layer-number">00</span>
+
+            <div>
+              <strong>Hardware</strong>
+              <p>
+                CPU · memory · storage · network · display · input
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         ROADMAP
+    ======================================================== -->
+
+    <section id="roadmap" class="section roadmap-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            VERSION ROADMAP
+          </span>
+
+          <h2>
+            From first boot<br>
+            to 1.0.
+          </h2>
+
+          <p>
+            Versions represent technical milestones. A version becomes
+            complete through implementation and verification — not simply
+            because time has passed.
+          </p>
+
+        </div>
+
+
+        <div class="roadmap">
+
+          <!-- 0.0.1 -->
+
+          <div class="roadmap-item active">
+
+            <div class="roadmap-marker">
+              01
+            </div>
+
+            <div class="roadmap-content">
+
+              <div class="roadmap-top">
+
+                <span class="version-label">
+                  v0.0.1
+                </span>
+
+                <span class="roadmap-state active-state">
+                  CURRENT
+                </span>
+
+              </div>
+
+              <h3>
+                Project Foundation
+              </h3>
+
+              <p>
+                Establish the architecture, repository, toolchain,
+                development workflow and complete 1.0 specification.
+              </p>
+
+              <div class="roadmap-tags">
+                <span>Architecture</span>
+                <span>Toolchain</span>
+                <span>Specification</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- 0.0.2 -->
+
+          <div class="roadmap-item">
+
+            <div class="roadmap-marker">
+              02
+            </div>
+
+            <div class="roadmap-content">
+
+              <div class="roadmap-top">
+
+                <span class="version-label">
+                  v0.0.2
+                </span>
+
+                <span class="roadmap-state">
+                  PLANNED
+                </span>
+
+              </div>
+
+              <h3>
+                First Boot
+              </h3>
+
+              <p>
+                Produce the first bootable snarOS image and establish
+                the earliest kernel execution environment.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- 0.1 -->
+
+          <div class="roadmap-item">
+
+            <div class="roadmap-marker">
+              03
+            </div>
+
+            <div class="roadmap-content">
+
+              <div class="roadmap-top">
+
+                <span class="version-label">
+                  v0.1
+                </span>
+
+                <span class="roadmap-state">
+                  PLANNED
+                </span>
+
+              </div>
+
+              <h3>
+                Kernel Foundation
+              </h3>
+
+              <p>
+                CPU initialization, interrupts, kernel runtime,
+                diagnostics and foundational kernel services.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- 0.2 -->
+
+          <div class="roadmap-item">
+
+            <div class="roadmap-marker">
+              04
+            </div>
+
+            <div class="roadmap-content">
+
+              <div class="roadmap-top">
+
+                <span class="version-label">
+                  v0.2
+                </span>
+
+                <span class="roadmap-state">
+                  PLANNED
+                </span>
+
+              </div>
+
+              <h3>
+                Memory & Execution
+              </h3>
+
+              <p>
+                Memory management, address spaces, tasks,
+                context switching, scheduling and initial IPC.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- 0.3 -->
+
+          <div class="roadmap-item">
+
+            <div class="roadmap-marker">
+              05
+            </div>
+
+            <div class="roadmap-content">
+
+              <div class="roadmap-top">
+
+                <span class="version-label">
+                  v0.3
+                </span>
+
+                <span class="roadmap-state">
+                  PLANNED
+                </span>
+
+              </div>
+
+              <h3>
+                Storage & Persistence
+              </h3>
+
+              <p>
+                Storage abstractions, filesystem interfaces,
+                persistent data operations and recovery.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- 0.4 -->
+
+          <div class="roadmap-item">
+
+            <div class="roadmap-marker">
+              06
+            </div>
+
+            <div class="roadmap-content">
+
+              <div class="roadmap-top">
+
+                <span class="version-label">
+                  v0.4
+                </span>
+
+                <span class="roadmap-state">
+                  PLANNED
+                </span>
+
+              </div>
+
+              <h3>
+                Userspace
+              </h3>
+
+              <p>
+                System services, shell, utilities and the initial
+                userspace application model.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- 0.5 -->
+
+          <div class="roadmap-item">
+
+            <div class="roadmap-marker">
+              07
+            </div>
+
+            <div class="roadmap-content">
+
+              <div class="roadmap-top">
+
+                <span class="version-label">
+                  v0.5
+                </span>
+
+                <span class="roadmap-state">
+                  PLANNED
+                </span>
+
+              </div>
+
+              <h3>
+                Security Foundation
+              </h3>
+
+              <p>
+                Process isolation, capabilities, authorization,
+                identity boundaries and security testing.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- 0.6 -->
+
+          <div class="roadmap-item">
+
+            <div class="roadmap-marker">
+              08
+            </div>
+
+            <div class="roadmap-content">
+
+              <div class="roadmap-top">
+
+                <span class="version-label">
+                  v0.6
+                </span>
+
+                <span class="roadmap-state">
+                  PLANNED
+                </span>
+
+              </div>
+
+              <h3>
+                Networking
+              </h3>
+
+              <p>
+                Network devices, protocol stack, sockets and
+                system-level networking interfaces.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- 0.7 -->
+
+          <div class="roadmap-item">
+
+            <div class="roadmap-marker">
+              09
+            </div>
+
+            <div class="roadmap-content">
+
+              <div class="roadmap-top">
+
+                <span class="version-label">
+                  v0.7
+                </span>
+
+                <span class="roadmap-state">
+                  PLANNED
+                </span>
+
+              </div>
+
+              <h3>
+                Graphics
+              </h3>
+
+              <p>
+                Display, input, rendering and the foundation
+                for a graphical environment.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- 0.8 -->
+
+          <div class="roadmap-item">
+
+            <div class="roadmap-marker">
+              10
+            </div>
+
+            <div class="roadmap-content">
+
+              <div class="roadmap-top">
+
+                <span class="version-label">
+                  v0.8
+                </span>
+
+                <span class="roadmap-state">
+                  PLANNED
+                </span>
+
+              </div>
+
+              <h3>
+                System Integration
+              </h3>
+
+              <p>
+                Integrate major subsystems and strengthen stability,
+                diagnostics and recovery.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- 0.9 -->
+
+          <div class="roadmap-item">
+
+            <div class="roadmap-marker">
+              11
+            </div>
+
+            <div class="roadmap-content">
+
+              <div class="roadmap-top">
+
+                <span class="version-label">
+                  v0.9
+                </span>
+
+                <span class="roadmap-state">
+                  PLANNED
+                </span>
+
+              </div>
+
+              <h3>
+                Release Candidate
+              </h3>
+
+              <p>
+                Full-system validation, security testing,
+                fuzzing, benchmarks and release hardening.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- 1.0 -->
+
+          <div class="roadmap-item final-item">
+
+            <div class="roadmap-marker final-marker">
+              12
+            </div>
+
+            <div class="roadmap-content">
+
+              <div class="roadmap-top">
+
+                <span class="version-label">
+                  v1.0.0
+                </span>
+
+                <span class="roadmap-state final-state">
+                  RELEASE GATE
+                </span>
+
+              </div>
+
+              <h3>
+                First Stable Release
+              </h3>
+
+              <p>
+                All defined Version 1.0 requirements implemented,
+                verified and documented.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         ENGINEERING PRINCIPLES
+    ======================================================== -->
+
+    <section id="engineering" class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            ENGINEERING PRINCIPLES
+          </span>
+
+          <h2>
+            Build the foundation<br>
+            correctly.
+          </h2>
+
+          <p>
+            The goal is not to make claims that sound impressive.
+            The goal is to build systems that can eventually prove them.
+          </p>
+
+        </div>
+
+
+        <div class="principles-grid">
+
+          <article class="principle-card">
+
+            <span>01</span>
+
+            <h3>
+              Security by construction
+            </h3>
+
+            <p>
+              Security boundaries should be part of the architecture
+              instead of being an afterthought.
+            </p>
+
+          </article>
+
+
+          <article class="principle-card">
+
+            <span>02</span>
+
+            <h3>
+              Failure containment
+            </h3>
+
+            <p>
+              A failure in one component should not automatically
+              become a failure of the entire system.
+            </p>
+
+          </article>
+
+
+          <article class="principle-card">
+
+            <span>03</span>
+
+            <h3>
+              Minimal trusted core
+            </h3>
+
+            <p>
+              Keep privileged code deliberate, understandable
+              and as small as practical.
+            </p>
+
+          </article>
+
+
+          <article class="principle-card">
+
+            <span>04</span>
+
+            <h3>
+              Measured performance
+            </h3>
+
+            <p>
+              Performance claims should eventually be supported
+              by reproducible benchmarks.
+            </p>
+
+          </article>
+
+
+          <article class="principle-card">
+
+            <span>05</span>
+
+            <h3>
+              Observable systems
+            </h3>
+
+            <p>
+              Diagnostics should make failures understandable
+              instead of mysterious.
+            </p>
+
+          </article>
+
+
+          <article class="principle-card">
+
+            <span>06</span>
+
+            <h3>
+              Evolution without chaos
+            </h3>
+
+            <p>
+              Stable interfaces and modular boundaries should allow
+              future capabilities without constantly rebuilding the core.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         TECHNOLOGY
+    ======================================================== -->
+
+    <section class="section technology-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            TECHNOLOGY
+          </span>
+
+          <h2>
+            The tools behind<br>
+            the system.
+          </h2>
+
+          <p>
+            Technology choices will evolve as architecture decisions
+            are validated. These represent the current engineering areas.
+          </p>
+
+        </div>
+
+
+        <div class="technology-layout">
+
+          <div class="technology-card">
+
+            <span class="tech-number">
+              01
+            </span>
+
+            <h3>
+              Low-level languages
+            </h3>
+
+            <div class="tech-list">
+
+              <span>C</span>
+              <span>Assembly</span>
+              <span>Shell</span>
+              <span>Rust — evaluation</span>
+
+            </div>
+
+          </div>
+
+
+          <div class="technology-card">
+
+            <span class="tech-number">
+              02
+            </span>
+
+            <h3>
+              Build & debugging
+            </h3>
+
+            <div class="tech-list">
+
+              <span>GCC / Clang</span>
+              <span>Linker</span>
+              <span>Make / CMake</span>
+              <span>GDB</span>
+              <span>QEMU</span>
+
+            </div>
+
+          </div>
+
+
+          <div class="technology-card">
+
+            <span class="tech-number">
+              03
+            </span>
+
+            <h3>
+              Engineering
+            </h3>
+
+            <div class="tech-list">
+
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Testing</span>
+              <span>Fuzzing</span>
+              <span>Benchmarking</span>
+
+            </div>
+
+          </div>
+
+
+          <div class="technology-card">
+
+            <span class="tech-number">
+              04
+            </span>
+
+            <h3>
+              Knowledge domains
+            </h3>
+
+            <div class="tech-list">
+
+              <span>Computer Architecture</span>
+              <span>Operating Systems</span>
+              <span>Concurrency</span>
+              <span>Networking</span>
+              <span>Security</span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         VERIFICATION
+    ======================================================== -->
+
+    <section class="section verification-section">
+
+      <div class="container">
+
+        <div class="verification-box">
+
+          <div class="verification-content">
+
+            <span class="eyebrow">
+              RELEASE PHILOSOPHY
+            </span>
+
+            <h2>
+              Code is not<br>
+              evidence by itself.
+            </h2>
+
+            <p>
+              A snarOS milestone becomes complete only when the
+              implementation, tests and documentation support it.
+            </p>
+
+          </div>
+
+
+          <div class="verification-pipeline">
+
+            <div class="pipeline-step">
+
+              <span>01</span>
+
+              <strong>
+                Implement
+              </strong>
+
+              <small>
+                Working code
+              </small>
+
+            </div>
+
+
+            <div class="pipeline-arrow">
+              →
+            </div>
+
+
+            <div class="pipeline-step">
+
+              <span>02</span>
+
+              <strong>
+                Test
+              </strong>
+
+              <small>
+                Automated validation
+              </small>
+
+            </div>
+
+
+            <div class="pipeline-arrow">
+              →
+            </div>
+
+
+            <div class="pipeline-step">
+
+              <span>03</span>
+
+              <strong>
+                Verify
+              </strong>
+
+              <small>
+                Behaviour & performance
+              </small>
+
+            </div>
+
+
+            <div class="pipeline-arrow">
+              →
+            </div>
+
+
+            <div class="pipeline-step">
+
+              <span>04</span>
+
+              <strong>
+                Document
+              </strong>
+
+              <small>
+                Reproducible evidence
+              </small>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         DEVLOG
+    ======================================================== -->
+
+    <section id="devlog" class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="eyebrow">
+            DEVELOPMENT LOG
+          </span>
+
+          <h2>
+            Build it.<br>
+            Record it.
+          </h2>
+
+          <p>
+            The development log will record meaningful technical
+            progress throughout the life of the project.
+          </p>
+
+        </div>
+
+
+        <div class="devlog-card">
+
+          <div class="devlog-number">
+            #000
+          </div>
+
+          <div class="devlog-main">
+
+            <div class="devlog-top">
+
+              <span>
+                CURRENT
+              </span>
+
+              <span>
+                09 SEP 2026
+              </span>
+
+            </div>
+
+            <h3>
+              Project foundation
+            </h3>
+
+            <p>
+              snarOS is currently being defined from the ground up.
+              The initial phase focuses on architecture, system boundaries,
+              development tooling and the Version 1.0 specification.
+            </p>
+
+            <div class="devlog-status">
+              Planning phase
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         FINAL CTA
+    ======================================================== -->
+
+    <section class="final-section">
+
+      <div class="container">
+
+        <div class="final-box">
+
+          <span class="eyebrow">
+            THE BEGINNING
+          </span>
+
+          <h2>
+            Every operating system<br>
+            starts with a first boot.
+          </h2>
+
+          <p>
+            snarOS starts here.
+          </p>
+
+          <a href="#v1" class="primary-btn">
+            Follow the journey
+            <span>↓</span>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
   <footer class="footer">
+
     <div class="footer-container">
 
       <div class="footer-brand">
-        <h2>snarOS</h2>
-        <p>Building an independent operating system for the future.</p>
+
+        <a href="#top" class="footer-logo">
+          snarOS
+        </a>
+
+        <p>
+          An independent operating system project
+          built from the ground up.
+        </p>
+
+        <span class="footer-status">
+          v0.0.1 · Planning
+        </span>
+
       </div>
 
-      <div class="footer-links">
-        <div>
-          <h4>Product</h4>
-          <a href="#">Features</a>
-          <a href="#">Download</a>
-          <a href="#">Roadmap</a>
-        </div>
 
-        <div>
-          <h4>Resources</h4>
-          <a href="#">Docs</a>
-          <a href="#">Blog</a>
-          <a href="#">GitHub</a>
-        </div>
+      <div class="footer-column">
 
-        <div>
-          <h4>Company</h4>
-          <a href="#">About</a>
-          <a href="#">Careers</a>
-          <a href="#">Contact</a>
-        </div>
+        <h4>
+          Project
+        </h4>
 
-        <div>
-          <h4>Legal</h4>
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-        </div>
+        <a href="#v1">Version 1.0</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#engineering">Engineering</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>
+          Development
+        </h4>
+
+        <a href="#devlog">Devlog</a>
+        <a href="#engineering">Principles</a>
+        <a href="#roadmap">Milestones</a>
+        <a href="#top">Status</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>
+          Resources
+        </h4>
+
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub ↗
+        </a>
+
+        <a href="#architecture">
+          Architecture
+        </a>
+
+        <a href="#v1">
+          Specifications
+        </a>
+
       </div>
 
     </div>
+
 
     <div class="footer-bottom">
-      © 2026 snarOS. All rights reserved.
+
+      <span>
+        © 2026 snarOS
+      </span>
+
+      <span>
+        Built from the ground up.
+      </span>
+
     </div>
+
   </footer>
+
 </body>
 </html>
